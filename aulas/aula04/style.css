@@ -37,3 +37,15 @@ h1 {
 .subgrid > div {
     background-color: #d2204198;
 }
+
+.grid-template-3 {
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.grid-template-4 {
+    display: grid;
+    max-width: 700px !important;
+    margin: auto;
+    border: 1px solid #24b694;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto))
+}
