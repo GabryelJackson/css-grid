@@ -21,31 +21,6 @@ h1 {
 }
 
 .grid-template {
-    grid-template-columns: 200px 200px;
-}
-
-.grid-template-2 {
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.subgrid {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 10px;
-}
-
-.subgrid > div {
-    background-color: #d2204198;
-}
-
-.grid-template-3 {
-    grid-template-columns: 100px 100px 100px 100px;
-}
-
-.grid-template-4 {
-    display: grid;
-    max-width: 700px !important;
-    margin: auto;
-    border: 1px solid #24b694;
-    grid-template-columns: repeat(auto-fit, minmax(100px, auto))
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 150px;
 }
