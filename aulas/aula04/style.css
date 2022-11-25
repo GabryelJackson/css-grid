@@ -24,3 +24,40 @@ h1 {
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 150px;
 }
+
+.grid-template-area {
+    display: grid;
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #24b694;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50px 150px 50px;
+    grid-template-areas: 
+    "logo nav nav"
+    "sidenav content advert"
+    "sidenav footer footer";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.advert {
+    grid-area: advert;
+}
+
+.footer {
+    grid-area: footer;
+}
