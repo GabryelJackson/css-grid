@@ -61,3 +61,45 @@ h1 {
 .footer {
     grid-area: footer;
 }
+
+.grid-template1 {
+    border: 1px solid #24b694;
+    text-align: center;
+    display: grid;
+    max-width: 500px;
+    margin: 10px auto;
+    grid-template: 100px 50px / repeat(3, 1fr);
+    grid-template: 
+    "eu gosto de" 200px
+    "conversar com voce" 150px
+    "tres tres tres"
+    / 150px 2fr 150px;
+}
+
+.eu {
+    grid-area: eu;
+}
+
+.gosto {
+    grid-area: gosto;
+}
+
+.de {
+    grid-area: de;
+}
+
+.conversar {
+    grid-area: conversar;
+}
+
+.com {
+    grid-area: com;
+}
+
+.voce {
+    grid-area: voce;
+}
+
+.tres {
+    grid-area: tres;
+}
