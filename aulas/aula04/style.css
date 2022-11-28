@@ -74,6 +74,7 @@ h1 {
     "conversar com voce" 150px
     "tres tres tres"
     / 150px 2fr 150px;
+    gap: 5px 15px;
 }
 
 .eu {
