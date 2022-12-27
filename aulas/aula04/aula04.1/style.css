@@ -1,0 +1,13 @@
+.grid-1 {
+    display: grid;
+    grid: 100px / auto-flow;
+    border: 1px solid black;
+    
+}
+
+.item {
+    margin: 10px;
+    text-align: center;
+    background-color: #cfffdd;
+    display: grid;
+}
