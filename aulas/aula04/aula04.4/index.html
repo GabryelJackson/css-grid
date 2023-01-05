@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-items</title>
+    <style>
+        .justify {
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 50px);
+            justify-items: stretch;
+            text-align: center;
+        }
+
+        .item {
+            display: grid;
+            background-color: #002e34;
+            color: white;
+            margin: 5px;
+        }
+
+        .item2 {
+            display: grid;
+            background-color: #002e34;
+            color: white;
+            margin: 5px;
+            grid-row: span 2;
+        }
+
+        .item3 {
+            display: grid;
+            background-color: #002e34;
+            color: white;
+            margin: 5px;
+            grid-row: span 2;
+        }
+
+        .item5 {
+            display: grid;
+            background-color: #002e34;
+            margin: 5px;
+            color: white;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify-items</h1>
+    <section class="justify">
+        <div class="item">teste 1</div>
+        <div class="item2">ae 2</div>
+        <div class="item3">Isso 3</div>
+        <div class="item">Ab 4</div>
+        <div class="item5">Aqui 5</div>
+        <div class="item">Ela 6</div>
+    </section>
+</body>
+</html>
