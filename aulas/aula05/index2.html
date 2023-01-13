@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>align-items</title>
+    <title>grid-column</title>
     <style>
-        .align {
+        .column {
             display: grid;
             border: 1px solid black;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 100px);
-            align-items: center;
+            grid-template-columns: [inicio] 1fr 1fr [final];
+            grid-auto-rows: 50px;
+            
         }
 
         .item {
             display: grid;
-            background-color: #cdeccc;
-            margin: 10px;
+            background-color: #d3ebc7;
             text-align: center;
+            margin: 10px;
+            grid-column: inicio / 2;
         }
     </style>
 </head>
 <body>
-    <h1>align-items</h1>
-    
-    <section class="align">
+    <h1>grid-column</h1>
+    <section class="column">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
