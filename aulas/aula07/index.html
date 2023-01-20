@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-area</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .grid-area {
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 50px;
+        }
+
+        .item1 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+            grid-area: 2 / 2/ 4/ 4;
+        }
+
+        .item2 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .item3 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .item4 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .item5 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+            grid-area: span 2/3;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid-area</h1>
+    <section class="grid-area">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+    </section>
+</body>
+</html>
