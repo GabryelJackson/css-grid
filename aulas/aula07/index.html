@@ -13,7 +13,7 @@
         .grid-area {
             display: grid;
             border: 1px solid black;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             grid-auto-rows: 50px;
         }
 
@@ -47,6 +47,14 @@
         }
 
         .item5 {
+            display: grid;
+            background-color: #9e9e9e;
+            text-align: center;
+            margin: 10px;
+            grid-area: span 2/3;
+        }
+
+        .item6 {
             display: grid;
             background-color: #9e9e9e;
             text-align: center;
